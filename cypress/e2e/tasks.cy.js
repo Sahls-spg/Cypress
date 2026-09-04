@@ -46,7 +46,6 @@ describe('tarefas', () => {
 
         it('campo obrigatório', () => {
             cy.createTask()
-
             cy.isRequired('This is a required field')
             // Valida um campo obrigatório no qual o texto não é HTML
         })
